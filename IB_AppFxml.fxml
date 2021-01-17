@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Tab?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IB_App.IB_AppFxmlController">
+    <children>
+      <Label fx:id="lblInstr" layoutX="126.0" layoutY="90.0" minHeight="10" minWidth="69" text="Instrument" />
+      <TextField fx:id="instr" layoutX="250.0" layoutY="86.0" prefHeight="10.0" prefWidth="77.0" text="IBM" />
+      <Label fx:id="lblInstType" layoutX="126.0" layoutY="115.0" minHeight="15" minWidth="69" text="Inst Type" />
+      <ComboBox fx:id="instTypeCbx" layoutX="250.0" layoutY="115.0" prefHeight="15.0" prefWidth="77.0" />
+      <Label fx:id="lbltimeint" layoutX="126.0" layoutY="140.0" minHeight="15" minWidth="69" text="Time Int" />
+      <ComboBox fx:id="timeIntCbx" layoutX="250.0" layoutY="140.0" prefHeight="15.0" prefWidth="77.0" />
+      <Label fx:id="lbldur" layoutX="126.0" layoutY="165.0" minHeight="15" minWidth="69" text="Duration" />
+      <ComboBox fx:id="durCbx" layoutX="250.0" layoutY="165.0" prefHeight="15.0" prefWidth="77.0" />
+      
+      <Button fx:id="ReqData" layoutX="250.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleButtonReqData" text="Req Data" />
+      
+      <!--Label fx:id="lbltimePeriod" layoutX="126.0" layoutY="140.0" minHeight="15" minWidth="69" text="Obs Time Period" />
+      <ComboBox fx:id="obsTimePeriod1Cbx" layoutX="250.0" layoutY="140.0" prefHeight="10.0" prefWidth="77.0" />
+      <ComboBox fx:id="obsTimePeriod2Cbx" layoutX="350.0" layoutY="140.0" prefHeight="10.0" prefWidth="77.0" />
+    
+      <Label fx:id="lbltradingPeriod" layoutX="126.0" layoutY="165.0" minHeight="10" minWidth="69" text="Trd Time Period" />
+      <ComboBox fx:id="tradTimePeriod1Cbx" layoutX="250.0" layoutY="165.0" prefHeight="10.0" prefWidth="77.0" />
+      <ComboBox fx:id="tradTimePeriod2Cbx" layoutX="350.0" layoutY="165.0" prefHeight="10.0" prefWidth="77.0" />
+    
+      <Label fx:id="lblCloseTime" layoutX="126.0" layoutY="190.0" minHeight="16" minWidth="69" text="Close Trading Time" />
+      <ComboBox fx:id="closeTimeCbx" layoutX="250.0" layoutY="186.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblNoContracts" layoutX="126.0" layoutY="215.0" minHeight="16" minWidth="69" text="No of Contracts" />
+      <TextField fx:id="noContracts" layoutX="250.0" layoutY="215.0" prefHeight="10.0" prefWidth="77.0" text="100" />
+      
+      <Label fx:id="lblInitialStop" layoutX="126.0" layoutY="240.0" minHeight="16" minWidth="69" text="Initial Stop" />
+      <TextField fx:id="initalStop" layoutX="250.0" layoutY="240.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblStopToBE" layoutX="126.0" layoutY="265.0" minHeight="16" minWidth="69" text="Stop To BE" />
+      <TextField fx:id="stopToBE" layoutX="250.0" layoutY="265.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblStopTA" layoutX="126.0" layoutY="290.0" minHeight="16" minWidth="69" text="Stop Trail Amount" />
+      <TextField fx:id="stopTA" layoutX="250.0" layoutY="290.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblTarget1" layoutX="126.0" layoutY="315.0" minHeight="16" minWidth="69" text="Target1" />
+      <TextField fx:id="target1" layoutX="250.0" layoutY="315.0" prefHeight="10.0" prefWidth="77.0" text="100" />
+      
+      <Label fx:id="lblTarget2" layoutX="126.0" layoutY="340.0" minHeight="16" minWidth="69" text="Target2" />
+      <TextField fx:id="target2" layoutX="250.0" layoutY="340.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblMaxWins" layoutX="126.0" layoutY="365.0" minHeight="16" minWidth="69" text="Max Wins" />
+      <TextField fx:id="maxWins" layoutX="250.0" layoutY="365.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblMaxLosers" layoutX="126.0" layoutY="390.0" minHeight="16" minWidth="69" text="Max Losers" />
+      <TextField fx:id="maxLosers" layoutX="250.0" layoutY="390.0" prefHeight="25.0" prefWidth="77.0" />
+      
+      <Label fx:id="lblTickSize" layoutX="126.0" layoutY="415.0" minHeight="16" minWidth="69" text="TickSize" />
+      <TextField fx:id="tickSize" layoutX="250.0" layoutY="415.0" prefHeight="10.0" prefWidth="77.0" text="100" />
+      
+      <Label fx:id="lblTicksPBL" layoutX="126.0" layoutY="440.0" minHeight="16" minWidth="69" text="Ticks past BL" />
+      <TextField fx:id="ticksPBL" layoutX="250.0" layoutY="440.0" prefHeight="10.0" prefWidth="77.0" /-->
+      
+      <TextArea fx:id="Logs" layoutX="75.0" layoutY="470.0" prefHeight="150.0" prefWidth="802.0" editable="false" style="overflow:scroll" wrapText="true" />
+      
+      <Label layoutX="75.0" layoutY="40.0" prefHeight="43.0" prefWidth="102.0" text="User Interface">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="Connect" layoutX="182.0" layoutY="620.0" mnemonicParsing="false" onAction="#handleButtonConnect" text="Connect" />
+      <Button fx:id="AcctDetails" layoutX="182.0" layoutY="650.0" mnemonicParsing="false" onAction="#handleButtonAcctDetails" text="Req Account Details" />
+      <Button fx:id="Disconnect" layoutX="182.0" layoutY="680.0" mnemonicParsing="false" onAction="#handleDisconnect" prefHeight="25.0" prefWidth="84.0" text="Disconnect" />
+      <Button fx:id="closeButton" onAction="#closeButtonAction"/>
+    </children>
+</AnchorPane>
